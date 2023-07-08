@@ -1,0 +1,63 @@
+var questionContainer = document.getElementById("question-container");
+var questionText = document.getElementById("question-text");
+var choicesContainer = document.getElementById("choices-container");
+
+function renderQuestion() {
+  var currentQuestion = quizQuestions[currentQuestionIndex];
+  questionText.textContent = currentQuestion.question;
+
+  choicesContainer.innerHTML = "";
+
+  currentQuestion.choices.forEach(function(choice, index) {
+  var choiceButton = document.createElement("button");
+  choiceButton.textContent = choice;
+  choiceButton.setAttribute("data-index", index);
+  choicesContainer.appendChild(choiceButton);
+  });
+}
+console.log("test 3")
+
+var choiceButtons = document.querySelectorAll(".option-button");
+
+choiceButtons.forEach(function(choiceButton, index) {
+  choiceButton.addEventListener("click", function(event) {
+    console.log("Inside choice button click event listener")
+  });
+});
+
+var score = 0;
+
+var currentQuestionIndex = 0;
+
+var choicesContainer = document.getElementById("choices-container");
+var scoreElement = document.getElementById("score");
+console.log("test 4");
+
+choicesContainer.addEventListener("click", function(event) {
+  console.log("inside choicesContainer click event listener");
+  var selectedOption = event.target;
+  console.log("selected option:", selectedOption)
+  if (selectedOption.matches("button")) {
+    var selectedIndex = parseInt(selectedOption.getAttribute("data-index"));
+    var currentQuestion = quizQuestions[currentQuestionIndex];
+    console.log("test 5")
+
+    if(selectedIndex === currentQuestion.correctAnswer) {
+      score++;
+      scoreElement.textContent = score;
+    }else {
+      displayMessage("Incorrect!");
+    }
+
+    currentQuestionIndex++;
+    if (currentQuestionIndex < quizQuestions.length) {
+      renderQuestion();
+    }else {
+      displayFinalScore();
+    }
+  }
+});
+
+function displayMessage(message) {
+  console.log(message);
+}

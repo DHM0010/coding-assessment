@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Quiz</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <h1>Coding Quiz</h1>
+  </header>
+  <main>
+    <section id ="start-screen">
+      <h2>Welcome to the coding quiz!</h2>
+      <p>Put your coding skills to the test!</p>
+      <button class="btnStart" id="start-button">Start Quiz</button>
+    </section>
+    <section id="quiz-screen" style="display: none">
+    <div id="question-container">
+      <h2 id="question-text"></h2>
+      </div>
+      <div id="choices-container">
+        <button class="option-button" index="0"></button>
+        <button class="option-button" index="1"></button>
+        <button class="option-button" index="2"></button>
+        <button class="option-button" index="3"></button>
+      </div>
+      <div id="timer-container">
+        <p>Time left: <span id="timer"></span></p>
+      </div>
+    </section>
+    <section id="result-screen" style="display: none">
+      <h2>Your Score</h2>
+      <p>You answered <span id="score"></span>out of<span id="total"></span>questions correctly</p>
+      <form id="initials-form">
+        <label for="initials">Enter your initials here:</label>
+        <input type="text" id="initials" maxlength="4" required>
+        <button type="submit">Save Score</button>
+      </form>
+    </section>
+  </main>
+
+
+  <section id="quiz-end" >
+    <h1>Quiz Ended!</h1>
+  
+  </section>
+  <ul id="results"></ul>
+  <script src="assets/script.js"></script>
+</body>
+</html>

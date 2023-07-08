@@ -1,0 +1,124 @@
+
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: aqua;
+}
+
+header h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+header {
+  background-color: red;
+  color: aqua;
+  padding: 20px;
+}
+
+main {
+  font-size: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: red;
+  color: aqua;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#question-container {
+  text-align: center;
+}
+
+#choices-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option-button {
+  margin-bottom: 10px;
+}
+
+#timer-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#timer {
+  font-weight: bold;
+}
+
+#result-screen {
+  text-align: center;
+}
+
+#initials-form {
+  margin-top: 20px;
+}
+
+#initials-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#initials-form input[type="text"] {
+  padding: 5px;
+  width: 100px;
+}
+
+#initials-form button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#initials-form button[type="submit"]:hover {
+  background-color: #777;
+}
+
+#quiz-end {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#results {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+  }
+  
+  #initials-form input[type="text"] {
+    width: 100px;
+  }
+  
+  #initials-form button[type="submit"] {
+    padding: 5px 15px;
+  }
+}
