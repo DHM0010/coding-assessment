@@ -8,52 +8,52 @@ console.log("test")
 var interval;
 var quizQuestions = [
   {
-    question: "What does 'null' mean in JavaScript?",
+    question: "1.) What does 'null' mean in JavaScript?",
     choices: ["positive value", "negative value", "zero value", "unknown value"],
     correctAnswer: 2
   },
   {
-    question: "What does the term 'Var' stand for in JavaScript?",
+    question: "2.) What does the term 'Var' stand for in JavaScript?",
     choices: ["variable", "various", "variant", "variate"],
     correctAnswer: 0
   },
   {
-    question: "What does the NaN value represent in JavaScript?",
+    question: "3.) What does the NaN value represent in JavaScript?",
     choices: ["No Answer necessary", "Null and None", "Negative and Negative", "Not a Number"],
     correctAnswer: 3
   },
   {
-    question: "Which of the following is NOT a valid JavaScript data type?",
+    question: "4.) Which of the following is NOT a valid JavaScript data type?",
     choices: ["boolean", "string", "character", "number"],
     correctAnswer: 2
   },
   {
-    question: "Which operator is used to compare both value and type in JavaScript?",
+    question: "5.) Which operator is used to compare both value and type in JavaScript?",
     choices: ["!==", "===", "==", "="],
     correctAnswer: 1
   },
   {
-    question: "Which method is used to add an element at the end of an array in JavaScript?",
+    question: "6.) Which method is used to add an element at the end of an array in JavaScript?",
     choices: ["add()", "concat()", "append()", "push()"],
     correctAnswer: 3
   },
   {
-    question: "Which keyword is used to declare a constant variable in JavaScript?",
+    question: "7.) Which keyword is used to declare a constant variable in JavaScript?",
     choices: ["let", "var", "const", "final"],
     correctAnswer: 2
   },
   {
-    question: "Inside which HTML element do we put the JavaScript?",
+    question: "8.) Inside which HTML element do we put the JavaScript?",
     choices: ["<script>", "<javascript>", "<js>", "<scripting>"],
     correctAnswer: 0
   },
   {
-    question: "How do you call a function named myFunction?",
+    question: "9.) How do you call a function named myFunction?",
     choices: ["call myFunction()", "myFunction()", "Call.myFunction()", "call function myFunction"],
     correctAnswer: 1
   },
   {
-    question: "How does a for loop start?",
+    question: "10.) How does a for loop start?",
     choices: ["for (i = 0; i <= 5)", "for i = 1 to 5", "for (i = 0; i <= 5; i++)", "for (i <= 5; i++)"],
     correctAnswer: 2
   }
